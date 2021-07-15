@@ -17,5 +17,17 @@ namespace PruebaSistemaTurnos
         {
             InitializeComponent();
         }
+
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarPaciente_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmPacientes oFormPacientes = new frmPacientes();
+            oFormPacientes.MdiParent = this;
+            oFormPacientes.Show();
+        }
     }
 }
